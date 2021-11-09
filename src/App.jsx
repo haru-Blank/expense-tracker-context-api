@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './Components/Global.css';
+import { Title } from './Components/Text';
 import { darkTheme, lightTheme } from './Components/Theme';
 import { useDarkMode } from './Hooks/useDarkMode';
 
@@ -12,8 +13,7 @@ const App = () => {
       <>
         <GlobalStyle />
         <div className="App">
-          hello dark mode
-          <button onClick={themeToggler}>Theme Toggle</button>
+          <Title>Expense Tracker</Title>
         </div>
       </>
     </ThemeProvider>

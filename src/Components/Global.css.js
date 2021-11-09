@@ -24,14 +24,14 @@ export const GlobalStyle = createGlobalStyle`
   body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
 
-    height: 100vh
+    height: 100vh;
 
     font-family: 'Red Hat Mono', monospace;
     font-size: 1.6rem;
     color: ${({ theme }) => theme.text};
     line-height: 1.7;
 
-    background: ${({ theme }) => theme.body}
+    background: ${({ theme }) => theme.body};
 `;
